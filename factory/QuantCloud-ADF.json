@@ -1,0 +1,15 @@
+{
+	"name": "QuantCloud-ADF",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5610ad58-ba4a-4b11-b6c5-96ae3cbb84f4",
+		"tenantId": "96d30611-1e33-4973-b083-c4ab84167b6a"
+	}
+}
