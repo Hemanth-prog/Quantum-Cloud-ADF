@@ -1,0 +1,17 @@
+{
+	"name": "DS_ADLS_LOOKUP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_CSV",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "root"
+			}
+		}
+	}
+}
