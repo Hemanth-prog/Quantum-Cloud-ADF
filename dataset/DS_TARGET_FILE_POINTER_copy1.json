@@ -1,0 +1,33 @@
+{
+	"name": "DS_TARGET_FILE_POINTER_copy1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_CSV",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TrgFileName": {
+				"type": "string"
+			},
+			"TrgFolderName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().TrgFileName",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().TrgFolderName",
+					"type": "Expression"
+				},
+				"fileSystem": "root"
+			}
+		}
+	}
+}
