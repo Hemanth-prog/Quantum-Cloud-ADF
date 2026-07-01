@@ -1,0 +1,32 @@
+{
+	"name": "DS_SQL_TO_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_CSV",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TargetFIleName": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "SQL_DATASETS"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().TargetFIleName",
+					"type": "Expression"
+				},
+				"folderPath": "SqlDatasets",
+				"fileSystem": "root"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
