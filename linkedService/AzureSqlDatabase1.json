@@ -6,12 +6,12 @@
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
 			"server": "quantcloud-server.database.windows.net",
-			"database": "free-sql-db-7144879",
+			"database": "QuantCloud-DB",
 			"encrypt": "mandatory",
 			"trustServerCertificate": true,
 			"authenticationType": "SQL",
 			"userName": "sqladmin",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDE0RUQzQjIxLUNFRDMtNDY1RS04Mjg2LUQyMTQ3Q0VBNjBCNF81NDAxOGQwNS1jZDNiLTQxMDYtODhhYi00OWRhYmRhNDk3OGYiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDE0RUQzQjIxLUNFRDMtNDY1RS04Mjg2LUQyMTQ3Q0VBNjBCNF8yNDQ3Njc2Mi1kZmQ3LTQxNzctOTZhYy1mYTJkZWU1N2ExN2YiDQp9"
 		}
 	}
 }
