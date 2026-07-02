@@ -1,0 +1,29 @@
+{
+	"name": "DF_FILTER",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "DS_READ_CSV",
+						"type": "DatasetReference"
+					},
+					"name": "SourceDataset"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "filterQuaterly"
+				}
+			],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> SourceDataset",
+				"SourceDataset filter(byName('party') == 'Bharatiya Janata Party') ~> filterQuaterly"
+			]
+		}
+	}
+}

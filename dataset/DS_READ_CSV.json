@@ -11,6 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "eci_bihar_assembly_results_2025.csv",
+				"folderPath": "csv",
 				"fileSystem": "root"
 			},
 			"columnDelimiter": ",",
