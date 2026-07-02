@@ -1,0 +1,34 @@
+{
+	"name": "DS_ONPREM_SQL_TO_ADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_CSV",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Folders": {
+				"type": "string"
+			},
+			"Files": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().Files",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().Folders",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
